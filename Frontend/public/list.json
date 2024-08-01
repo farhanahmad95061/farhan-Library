@@ -1,0 +1,90 @@
+[
+    {
+        "id":1,
+        "name":"Comedy Book",
+        "title":"Lore, wdgwud whdw dhwdwh.",
+        "price":20,
+        "category":"Food",
+        "image":"https://cdn.pixabay.com/photo/2024/05/08/16/38/witch-8748638_1280.jpg"
+    },
+    {
+        "id":2,
+        "name":"Comedy Book",
+        "title":"Lore, wdgwud whdw dhwdwh.",
+        "price":20,
+        "category":"Free",
+        "image":"https://cdn.pixabay.com/photo/2024/05/08/16/38/witch-8748638_1280.jpg"
+    },
+    {
+        "id":3,
+        "name":"Comedy Book",
+        "title":"Lore, wdgwud whdw dhwdwh.",
+        "price":20,
+        "category":"Food",
+        "image":"https://cdn.pixabay.com/photo/2024/05/08/16/38/witch-8748638_1280.jpg"
+    },
+    {
+        "id":4,
+        "name":"Comedy Book",
+        "title":"Lore, wdgwud whdw dhwdwh.",
+        "price":20,
+        "category":"Free",
+        "image":"https://cdn.pixabay.com/photo/2024/05/08/16/38/witch-8748638_1280.jpg"
+    },
+    {
+        "id":5,
+        "name":"Comedy Book",
+        "title":"Lore, wdgwud whdw dhwdwh.",
+        "price":20,
+        "category":"Free",
+        "image":"https://cdn.pixabay.com/photo/2024/05/08/16/38/witch-8748638_1280.jpg"
+    },
+    {
+        "id":6,
+        "name":"Comedy Book",
+        "title":"Lore, wdgwud whdw dhwdwh.",
+        "price":20,
+        "category":"Food",
+        "image":"https://cdn.pixabay.com/photo/2024/05/08/16/38/witch-8748638_1280.jpg"
+    },
+    {
+        "id":7,
+        "name":"Comedy Book",
+        "title":"Lore, wdgwud whdw dhwdwh.",
+        "price":20,
+        "category":"Free",
+        "image":"https://cdn.pixabay.com/photo/2024/05/08/16/38/witch-8748638_1280.jpg"
+    },
+    {
+        "id":8,
+        "name":"Comedy Book",
+        "title":"Lore, wdgwud whdw dhwdwh.",
+        "price":20,
+        "category":"Free",
+        "image":"https://cdn.pixabay.com/photo/2024/05/08/16/38/witch-8748638_1280.jpg"
+    },
+    {
+        "id":9,
+        "name":"Comedy Book",
+        "title":"Lore, wdgwud whdw dhwdwh.",
+        "price":20,
+        "category":"Food",
+        "image":"https://cdn.pixabay.com/photo/2024/05/08/16/38/witch-8748638_1280.jpg"
+    },
+    {
+        "id":10,
+        "name":"Comedy Book",
+        "title":"Lore, wdgwud whdw dhwdwh.",
+        "price":20,
+        "category":"Free",
+        "image":"https://cdn.pixabay.com/photo/2024/05/08/16/38/witch-8748638_1280.jpg"
+    },
+    {
+        "id":11,
+        "name":"Comedy Book",
+        "title":"Lore, wdgwud whdw dhwdwh.",
+        "price":20,
+        "category":"Food",
+        "image":"https://cdn.pixabay.com/photo/2024/05/08/16/38/witch-8748638_1280.jpg"
+    }
+]

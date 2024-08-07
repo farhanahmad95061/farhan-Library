@@ -1,16 +1,46 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useForm} from "react-hook-form"
+import axios from 'axios'
+import toast, { Toaster } from 'react-hot-toast';
 
 
 
 function Login() {
-    const {
-        register,
-        handleSubmit,
-        formState: { errors },
-      } = useForm()
-      const onSubmit = (data) => console.log(data)
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm()
+  const onSubmit = async(data) => {
+    const userInfo={
+     
+      email:data.email,
+      password:data.password
+
+    }
+    console.log(data);
+    await axios.post("http://localhost:4001/user/login",userInfo)
+   .then((res)=>{
+    console.log(res.data);
+    if(res.data){
+      //alert("you are now logged in");
+      toast.success('You are now logged in !!');
+      document.getElementById("my_modal_3").close();
+      setTimeout(()=>{
+       window.location.reload();
+       localStorage.setItem("User",JSON.stringify(res.data.user));
+      },2000)
+    }
+   }).catch((err)=>{
+    console.log(err);
+      if(err.response){
+    //alert("error: invalid username or password" );
+    toast.error('Error: invalid username or password!!');
+      setTimeout(()=>{},2000);
+      }
+   })
+  };
   return (
     <div>
  

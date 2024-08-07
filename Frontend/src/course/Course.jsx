@@ -7,10 +7,10 @@ function Course() {
   return (
     <>
    <Navbar/>
-   <div className='min-h-screen bg-white'>
+   
 
    <Courses/>
-   </div>
+ 
    <Footer/>
    </>
   )

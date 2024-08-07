@@ -1,10 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import Login from './Login';
+import { useAuth } from '../context/AuthProvider';
+import { useContext } from 'react';
+import Logout from './Logout';
 
 
 
 
 function Navbar() {
+      const [authUser,setauthUser]=useAuth()
+      
+
+
+
   const [theme,settheme]=useState(localStorage.getItem("theme")?localStorage.getItem("theme"):"light")
   const element=document.documentElement;
   useEffect(()=>{
@@ -130,6 +138,9 @@ function Navbar() {
 </label>
   </div>
 
+
+   {authUser?<Logout/>:
+   
   <div >
    
     <a className="btn" onClick={()=>document.getElementById("my_modal_3").showModal()} >Login
@@ -137,7 +148,8 @@ function Navbar() {
     </a>
    <Login/>
 
-    </div>
+    </div> 
+   }
   </div>
 </div>
 </div>

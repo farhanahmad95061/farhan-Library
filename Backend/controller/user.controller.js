@@ -36,6 +36,7 @@ export const Login=async(req,res)=>{
     try {
         const {email,password}=req.body;
         const user=await User.findOne({email});
+        console.log(email)
         const isMatch= await bcryptjs.compare(password,user.password);
         if(!user || !isMatch){
         return     res.status(400).json({massage:"invalid username or password"})
@@ -45,7 +46,7 @@ export const Login=async(req,res)=>{
                 user:{
                     _id:user._id,
                    fullname:user.fullname,
-                  
+                   
                    email:user.password,
         
                 },
@@ -53,7 +54,7 @@ export const Login=async(req,res)=>{
         }
     } catch (error) {
         console.log("error"+ error.message);
-        res.status(500).json({message:"internal sever error"}) 
+        res.status(500).json({message:"internal sever error, u"}) 
         
     }
 

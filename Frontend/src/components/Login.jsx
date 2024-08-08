@@ -21,7 +21,6 @@ function Login() {
     }
     console.log(data);
     await axios.post("https://farhans-library.onrender.com/user/login",userInfo)
-    // await axios.post("http://localhost:4001/user/login",userInfo)
    .then((res)=>{
     console.log(res.data);
     if(res.data){

@@ -13,6 +13,7 @@ app.use(express.json());
 
 const port = process.env.PORT || 4000
 const URI = process.env.mongoDBURI 
+console.log(URI);
 
 //mongoDB connection
 try {

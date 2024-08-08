@@ -27,7 +27,7 @@ export const  Singup=async(req,res)=>{
        });
     } catch (error) {
         console.log("error"+ error.message);
-        res.status(500).json({message:"internal sever error"})
+        res.status(500).json({message:error.message})
         
     }
 };

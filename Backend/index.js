@@ -8,6 +8,9 @@ import UserRouter from './route/user.route.js' ;
 const app=express();
 dotenv.config();
 
+const port = process.env.PORT || 4000
+const URI = process.env.mongoDBURI 
+console.log(URI);
 //mongoDB connection
 try {
   await mongoose.connect(URI)
@@ -20,10 +23,6 @@ try {
 app.use(cors());
 //to parse the json data
 app.use(express.json());
-
-const port = process.env.PORT || 4000
-const URI = process.env.mongoDBURI 
-console.log(URI);
 
 //defining routes
 app.use("/book",BookRouter)

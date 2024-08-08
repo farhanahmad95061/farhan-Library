@@ -8,6 +8,6 @@ export const getbook=async(req,res)=>{
     
    } catch (error) {
     console.log("eroor :",error)
-    res.status(500).json(error)
+    res.status(500).json('Internal Server Error')
    }
 }

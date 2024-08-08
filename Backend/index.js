@@ -9,8 +9,7 @@ const app=express();
 dotenv.config();
 
 const port = process.env.PORT || 4000
-const URI = process.env.mongoDBURI 
-console.log(URI);
+const URI = process.env.mongoDBURI
 //mongoDB connection
 try {
   mongoose.connect(URI)
